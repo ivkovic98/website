@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="sr-RS">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO META TAGS -->
+    <title>Gumarac NS 021 | Gumiranje Metala Novi Sad | Industrijska Vulkanizacija</title>
+    <meta name="description" content="Gumarac NS 021 Novi Sad - Profesionalno gumiranje metala, industrijska vulkanizacija, peskarenje i zaštita od korozije. Autoklav 2x6m za preciznu toplu vulkanizaciju. Pozovite +381631049441">
+    <meta name="keywords" content="gumiranje metala, vulkanizacija novi sad, peskarenje metala, zaštita od korozije, autoklav vulkanizacija, industrijska guma, gumiranje cevi, oblaganje metala gumom, elastične spojke, gumene spojke novi sad, zaštita metala srbija, profesionalno gumiranje, topla vulkanizacija">
+    
+    <!-- GEO TAGS -->
+    <meta name="geo.region" content="RS-VO">
+    <meta name="geo.placename" content="Novi Sad">
+    <meta name="geo.position" content="45.267136;19.833549">
+    <meta name="ICBM" content="45.267136, 19.833549">
+    
+    <!-- OPEN GRAPH / FACEBOOK -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gumarac021.rs">
+    <meta property="og:title" content="Gumarac NS 021 - Gumiranje Metala i Vulkanizacija Novi Sad">
+    <meta property="og:description" content="Profesionalne usluge gumiranja metala, industrijske vulkanizacije i peskarenja u Novom Sadu. Autoklav 2x6m za preciznu zaštitu od habanja i korozije.">
+    <meta property="og:image" content="https://gumarac021.rs/slike/PGM3.jpg">
+    <meta property="og:locale" content="sr_RS">
+    <meta property="og:locale:alternate" content="en_US">
+    
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Gumarac NS 021 - Gumiranje Metala Novi Sad">
+    <meta name="twitter:description" content="Profesionalno gumiranje metala i industrijska vulkanizacija u Novom Sadu">
+    <meta name="twitter:image" content="https://gumarac021.rs/slike/PGM3.jpg">
+    
+    <!-- ADDITIONAL SEO -->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="author" content="Gumarac NS 021">
+    <meta http-equiv="content-language" content="sr-RS">
+    <link rel="canonical" href="https://gumarac021.rs">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#3b82f6',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .slider-container {
+            position: relative;
+            overflow: hidden;
+        }
+        .slide {
+            display: none;
+            animation: fadeIn 1s;
+        }
+        .slide.active {
+            display: block;
+        }
+        .service-slider {
+            position: relative;
+            overflow: hidden;
+        }
+        .service-slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: none;
+            animation: fadeIn 1s;
+        }
+        .service-slide.active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        .lang-btn {
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .lang-btn:hover {
+            transform: scale(1.1);
+        }
+        .lang-btn.active {
+            opacity: 1;
+        }
+        .lang-btn.inactive {
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800">
+    
+    <!-- Navigation Bar -->
+    <nav class="bg-primary text-white shadow-lg fixed w-full top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold">
+                GUMARAC NS <span class="text-yellow-400">021</span>
+            </div>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#pocetna" class="hover:text-yellow-400 transition" data-lang-key="nav_home">Početna</a>
+                <a href="#o-nama" class="hover:text-yellow-400 transition" data-lang-key="nav_about">O Nama</a>
+                <a href="#usluge" class="hover:text-yellow-400 transition" data-lang-key="nav_services">Usluge</a>
+                <a href="#tehnologija" class="hover:text-yellow-400 transition" data-lang-key="nav_tech">Tehnologija</a>
+                <a href="#kontakt" class="hover:text-yellow-400 transition" data-lang-key="nav_contact">Kontakt</a>
+                
+                <!-- Language Switcher -->
+                <div class="flex items-center space-x-2 ml-4 border-l border-white/30 pl-4">
+                   <span class="lang-btn active flex items-center gap-1" onclick="switchLanguage('sr')" id="lang-sr">
+                        <img src="slike/rs.svg" alt="Srpski" class="w-6 h-4">
+                    </span>
+                    <span class="text-white/50">|</span>
+                    <span class="lang-btn inactive flex items-center gap-1" onclick="switchLanguage('en')" id="lang-en">
+                        <img src="slike/gb.svg" alt="English" class="w-6 h-4">
+                    </span>
+                </div>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden" aria-label="Otvori meni">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-primary pb-4">
+            <div class="flex flex-col space-y-2 px-4">
+                <a href="#pocetna" class="hover:text-yellow-400 transition py-2" data-lang-key="nav_home">Početna</a>
+                <a href="#o-nama" class="hover:text-yellow-400 transition py-2" data-lang-key="nav_about">O Nama</a>
+                <a href="#usluge" class="hover:text-yellow-400 transition py-2" data-lang-key="nav_services">Usluge</a>
+                <a href="#tehnologija" class="hover:text-yellow-400 transition py-2" data-lang-key="nav_tech">Tehnologija</a>
+                <a href="#kontakt" class="hover:text-yellow-400 transition py-2" data-lang-key="nav_contact">Kontakt</a>
+                
+                <!-- Mobile Language Switcher -->
+                <div class="flex items-center space-x-3 py-2 border-t border-white/30 mt-2 pt-4">
+                    <span class="lang-btn active flex items-center gap-2" onclick="switchLanguage('sr')" id="lang-sr-mobile">
+                        <img src="slike/rs.svg" alt="Srpski" class="w-6 h-4"> SR
+                    </span>
+                    <span class="text-white/50">|</span>
+                    <span class="lang-btn inactive flex items-center gap-2" onclick="switchLanguage('en')" id="lang-en-mobile">
+                        <img src="slike/gb.svg" alt="English" class="w-6 h-4"> EN
+                    </span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Slider -->
+    <section id="pocetna" class="mt-16 slider-container h-[500px] md:h-[600px] bg-gray-900">
+        <div class="slide active relative h-full">
+            <img src="slike/3_bandag_5.jpg" alt="Profesionalno gumiranje metalnih cevi industrijskom gumom - Gumarac NS 021 Novi Sad" class="w-full h-full object-cover opacity-70" loading="eager" width="1600" height="600">
+            <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40">
+                <div class="text-center text-white px-4">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4">GUMARAC NS 021</h1>
+                    <p class="text-xl md:text-2xl" data-lang-key="hero_subtitle">Vrhunska rešenja zaštite metala i industrijske vulkanizacije</p>
+                </div>
+            </div>
+        </div>
+        <div class="slide relative h-full">
+            <img src="slike/PGM3.jpg" alt="Zaštita metala od korozije i habanja - industrijska vulkanizacija Novi Sad" class="w-full h-full object-cover opacity-70" loading="lazy" width="1600" height="600">
+            <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40">
+                <div class="text-center text-white px-4">
+                    <h2 class="text-3xl md:text-5xl font-bold mb-4" data-lang-key="hero_slide2_title">Profesionalno Gumiranje Metala</h2>
+                    <p class="text-lg md:text-xl" data-lang-key="hero_slide2_subtitle">Zaštita od habanja, korozije i hemijskih uticaja</p>
+                </div>
+            </div>
+        </div>
+        <div class="slide relative h-full">
+            <img src="slike/naslovna10.jpg" alt="Autoklav 2x6m za toplu vulkanizaciju - precizna kontrola temperature" class="w-full h-full object-cover opacity-70" loading="lazy" width="1600" height="600">
+            <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40">
+                <div class="text-center text-white px-4">
+                    <h2 class="text-3xl md:text-5xl font-bold mb-4" data-lang-key="hero_slide3_title">Najsavremenija Tehnologija</h2>
+                    <p class="text-lg md:text-xl" data-lang-key="hero_slide3_subtitle">Autoklav sa preciznošću i kapacitetom</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slider Controls -->
+        <button onclick="heroSlider.prev()" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 hover:bg-opacity-75 text-gray-800 p-3 rounded-full transition" aria-label="Prethodna slika">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+        </button>
+        <button onclick="heroSlider.next()" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 hover:bg-opacity-75 text-gray-800 p-3 rounded-full transition" aria-label="Sledeća slika">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+        </button>
+    </section>
+
+    <!-- O Nama Section -->
+    <section id="o-nama" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-8 text-center" data-lang-key="about_title">Profil Kompanije</h2>
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="md:w-1/2">
+                        <img src="slike/rubber_joint_202204.jpg" alt="Elastične gumene spojke i connecting komponente - proizvodnja po meri" class="rounded-lg shadow-lg w-full" loading="lazy" width="800" height="600">
+                    </div>
+                    <div class="md:w-1/2">
+                        <p class="text-lg leading-relaxed text-gray-700" data-lang-key="about_p1">
+                            <span class="font-bold text-primary">Gumarac NS 021</span> je firma sa sedištem u Novom Sadu, specijalizovana za inženjerska rešenja u domenu zaštite metalnih površina i komponenti od habanja, korozije i hemijskih uticaja.
+                        </p>
+                        <p class="text-lg leading-relaxed text-gray-700 mt-4" data-lang-key="about_p2">
+                            Naša ekspertiza leži u primeni naprednih tehnologija gumiranja i tople vulkanizacije, sa ciljem optimizacije performansi i produženja radnog veka industrijske opreme naših klijenata.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Usluge Section -->
+    <section id="usluge" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4 text-center" data-lang-key="services_title">Integrisane Usluge i Proizvodnja</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto text-lg" data-lang-key="services_subtitle">
+                Nudimo zaokružen portfolio usluga, obuhvatajući ceo proces — od pripreme površine do finalnog proizvoda
+            </p>
+            
+            <div class="max-w-6xl mx-auto space-y-16">
+                <!-- Usluga 1 - Profesionalno Gumiranje Metala -->
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="md:w-1/2">
+                        <div class="border-l-4 border-secondary pl-4">
+                            <h3 class="text-2xl font-bold text-primary mb-3" data-lang-key="service1_title">Profesionalno Gumiranje Metala</h3>
+                            <p class="text-gray-700 leading-relaxed" data-lang-key="service1_desc">
+                                Oblaganje svih vrsta i oblika metalnih elemenata visokokvalitetnom industrijskom gumom, precizno odabranom prema specifičnim zahtevima eksploatacije (otpornost na abraziju, kiseline, visoke temperature, UV zračenje).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2">
+                        <div class="service-slider rounded-lg shadow-lg overflow-hidden h-[300px]" data-slider="1">
+                            <div class="service-slide active">
+                                <img src="slike/PGM1 (2).jpg" alt="Gumiranje metalnih cevi - priprema za zaštitu od abrazije" class="w-full h-[300px] object-cover" loading="lazy" width="800" height="300">
+                            </div>
+                            <div class="service-slide">
+                                <img src="slike/PGM2 (2).jpg" alt="Primena industrijske gume na metalne površine" class="w-full h-[300px] object-cover" loading="lazy" width="800" height="300">
+                            </div>
+                            <div class="service-slide">
+                                <img src="slike/PGM3 (2).jpg" alt="Završno gumiranje metalnih cevi - zaštita od korozije" class="w-full h-[300px] object-cover" loading="lazy" width="800" height="300">
+                            </div>
+                            <div class="service-slide">
+                                <img src="slike/PGM4.jpg" alt="Profesionalno oblaganje metala industrijskom gumom" class="w-full h-[300px] object-cover" loading="lazy" width="800" height="300">
+                            </div>
+                             <div class="service-slide">
+                                <img src="slike/PGM5 (2).jpg" alt="Kvalitetno gumiranje za dugotrajnu zaštitu metala" class="w-full h-[300px] object-cover" loading="lazy" width="800" height="300">
+                            </div>
+                             <div class="service-slide">
+                                <img src="slike/PSPM3.jpg" alt="Gumene spojke i zaštitno oblaganje metala" class="w-full h-[300px] object-cover" loading="lazy" width="800" height="300">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Usluga 2 - Priprema Površine i Sanacija -->
+                <div class="flex flex-col md:flex-row-reverse items-center gap-8">
+                    <div class="md:w-1/2">
+                        <div class="border-l-4 border-secondary pl-4">
+                            <h3 class="text-2xl font-bold text-primary mb-3" data-lang-key="service2_title">Priprema i sanacija metalnih površina</h3>
+                            <p class="text-gray-700 leading-relaxed" data-lang-key="service2_desc">
+                                Obezbeđujemo maksimalnu adheziju kroz rigorozan proces. Ovo uključuje profesionalno peskarenje metalnih delova radi uklanjanja nečistoća i stvaranja idealne mikrostrukture površine, kao i sanaciju prethodno oštećenih metalnih komponenti.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2">
+                        <div class="service-slider rounded-lg shadow-lg overflow-hidden h-[300px]" data-slider="2">
+                            <div class="service-slide active">
+                                <img src="slike/PPS5.jpg" alt="Peskarenje metalnih površina - priprema za gumiranje" class="w-full h-[300px] object-cover" loading="lazy" width="800" height="300">
+                            </div>
+                            <div class="service-slide">
+                                <img src="slike/PPS6.jpg" alt="Profesionalna priprema metala - uklanjanje nečistoća" class="w-full h-[300px] object-cover" loading="lazy" width="800" height="300">
+                            </div>
+                            <div class="service-slide">
+                                <img src="slike/PPS3.jpg" alt="Sanacija oštećenih metalnih komponenti" class="w-full h-[300px] object-cover" loading="lazy" width="800" height="300">
+                            </div>
+                              <div class="service-slide">
+                                <img src="slike/PPS4.jpg" alt="Priprema površine za maksimalnu adheziju gume" class="w-full h-[300px] object-cover" loading="lazy" width="800" height="300">
+                            </div>
+                              <div class="service-slide">
+                                <img src="slike/PPS2.jpg" alt="Peskarenje i čišćenje metalnih delova" class="w-full h-[300px] object-cover" loading="lazy" width="800" height="300">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Usluga 3 - Proizvodnja Spojki po Meri -->
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="md:w-1/2">
+                        <div class="border-l-4 border-secondary pl-4">
+                            <h3 class="text-2xl font-bold text-primary mb-3" data-lang-key="service3_title">Proizvodnja Spojki po Meri</h3>
+                            <p class="text-gray-700 leading-relaxed" data-lang-key="service3_desc">
+                                Razvijamo i proizvodimo elastične gumene spojke svih vrsta i dimenzija, projektovane da zadovolje zahteve specifičnih prenosnih sistema i industrijskih aplikacija.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2">
+                        <div class="service-slider rounded-lg shadow-lg overflow-hidden h-[300px]" data-slider="3">
+                            <div class="service-slide active">
+                                <img src="slike/PSPM3.jpg" alt="Elastične gumene spojke - proizvodnja po meri" class="w-full h-[300px] object-cover" loading="lazy" width="800" height="300">
+                            </div>
+                            <div class="service-slide">
+                                <img src="slike/PSPM20.jpg" alt="Industrijske gumene spojke za prenosne sisteme" class="w-full h-[300px] object-cover" loading="lazy" width="800" height="300">
+                            </div>
+                            <div class="service-slide">
+                                <img src="slike/PSPM1.jpg" alt="Custom gumene spojke za industrijske aplikacije" class="w-full h-[300px] object-cover" loading="lazy" width="800" height="300">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Usluga 4 - Rešenja po Zahtevu Klijenta -->
+                <div class="flex flex-col md:flex-row-reverse items-center gap-8">
+                    <div class="md:w-1/2">
+                        <div class="border-l-4 border-secondary pl-4">
+                            <h3 class="text-2xl font-bold text-primary mb-3" data-lang-key="service4_title">Rešenja po Zahtevu Klijenta</h3>
+                            <p class="text-gray-700 leading-relaxed" data-lang-key="service4_desc">
+                                Naš tim je posvećen isporuci personalizovanih rešenja, u potpunosti prateći tehničke specifikacije i potrebe naručioca.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2">
+                        <div class="service-slider rounded-lg shadow-lg overflow-hidden h-[300px]" data-slider="4">
+                            <div class="service-slide active">
+                                <img src="slike/RPZK5.jpg" alt="Personalizovana rešenja gumiranja po zahtevu klijenta" class="w-full h-[300px] object-cover" loading="lazy" width="800" height="300">
+                            </div>
+                            <div class="service-slide">
+                                <img src="slike/RPZK7.jpg" alt="Tehnička specifikacija i izrada po narudžbini" class="w-full h-[300px] object-cover" loading="lazy" width="800" height="300">
+                            </div>
+                            <div class="service-slide">
+                                <img src="slike/RPZK6.jpg" alt="Industrijska rešenja prilagođena potrebama klijenata" class="w-full h-[300px] object-cover" loading="lazy" width="800" height="300">
+                            </div>
+                            <div class="service-slide">
+                                <img src="slike/RPZK1.jpg" alt="Prilagođena zaštita metala za specifične primene" class="w-full h-[300px] object-cover" loading="lazy" width="800" height="300">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tehnologija Section -->
+    <section id="tehnologija" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4 text-center" data-lang-key="tech_title">Tehnološka Prednost</h2>
+                <p class="text-center text-gray-600 mb-12 text-lg" data-lang-key="tech_subtitle">Autoklav za Preciznu Vulkanizaciju</p>
+                
+                <div class="flex flex-col md:flex-row-reverse items-center gap-8">
+                    <div class="md:w-1/2">
+                        <img src="slike/autoclave-control-system-upgrades-e1659728751207.jpg" alt="Kontrolni sistem autoklava za toplu vulkanizaciju - električno grejanje" class="rounded-lg shadow-lg w-full" loading="lazy" width="800" height="600">
+                    </div>
+                    <div class="md:w-1/2 space-y-6">
+                        <div class="border-l-4 border-secondary pl-4">
+                            <h3 class="text-xl font-bold text-primary mb-2" data-lang-key="tech_feature1_title">Visokokapacitetni Autoklav</h3>
+                            <p class="text-gray-700" data-lang-key="tech_feature1_desc">
+                                Posedujemo autoklav impresivnih dimenzija (<strong>prečnika 2 metra i dužine 6 metara</strong>), koji omogućava tretman krupnih i gabaritnih delova.
+                            </p>
+                        </div>
+                        
+                        <div class="border-l-4 border-secondary pl-4">
+                            <h3 class="text-xl font-bold text-primary mb-2" data-lang-key="tech_feature2_title">Kontrolisan Proces</h3>
+                            <p class="text-gray-700" data-lang-key="tech_feature2_desc">
+                                Naš sistem koristi <strong>električni pogon za grejanje</strong>, što obezbeđuje neuporedivo precizniju kontrolu temperature i pritiska u odnosu na parne sisteme. Ovaj metod eliminiše rizik od kondenzacije i čuva osetljive komponente od oštećenja izazvanih vlagom.
+                            </p>
+                        </div>
+                        
+                        <div class="border-l-4 border-secondary pl-4">
+                            <h3 class="text-xl font-bold text-primary mb-2" data-lang-key="tech_feature3_title">Uslužna Vulkanizacija</h3>
+                            <p class="text-gray-700" data-lang-key="tech_feature3_desc">
+                                Kao dodatnu uslugu, nudimo korišćenje kapaciteta našeg autoklava (<strong>uslužna topla vulkanizacija</strong>) za potrebe drugih preduzeća.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reference Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-primary mb-12 text-center" data-lang-key="industries_title">Reference po Industrijama</h2>
+            
+            <div class="grid md:grid-cols-4 gap-6 max-w-6xl mx-auto">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-primary mb-2" data-lang-key="industry1_title">Hemijska Industrija</h3>
+                    <p class="text-sm text-gray-600" data-lang-key="industry1_desc">Zaštita rezervoara, cevovoda i pumpi</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-primary mb-2" data-lang-key="industry2_title">Rudarstvo i Prerada</h3>
+                    <p class="text-sm text-gray-600" data-lang-key="industry2_desc">Bunkeri, silosi, transportni sistemi</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-primary mb-2" data-lang-key="industry3_title">Mašinogradnja</h3>
+                    <p class="text-sm text-gray-600" data-lang-key="industry3_desc">Gumiranje valjaka i točkova</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-primary mb-2" data-lang-key="industry4_title">Energetika</h3>
+                    <p class="text-sm text-gray-600" data-lang-key="industry4_desc">Kritični rotirajući delovi</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontakt Section -->
+    <section id="kontakt" class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center" data-lang-key="contact_title">Kontaktirajte Nas</h2>
+            <p class="text-center text-lg mb-12" data-lang-key="contact_subtitle">Pozovite nas da pronađemo optimalno rešenje za Vaše industrijske izazove</p>
+            
+            <div class="max-w-4xl mx-auto grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2" data-lang-key="contact_address_title">Adresa</h3>
+                    <p>Novi Sad, Srbija</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2" data-lang-key="contact_phone_title">Telefon</h3>
+                    <p class="text-2xl"><a href="tel:+381631049441" class="hover:text-yellow-400">+381631049441</a></p>
+                    <p class="text-2xl"><a href="tel:+381616807892" class="hover:text-yellow-400">+381616807892</a></p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Email</h3>
+                    <p><a href="mailto:gumaracns@gmail.com" class="hover:text-yellow-400">gumaracns@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p data-lang-key="footer_copyright">&copy; 2024 Gumarac NS 021. Sva prava zadržana.</p>
+        </div>
+    </footer>
+
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Gumarac NS 021",
+      "description": "Profesionalno gumiranje metala, industrijska vulkanizacija i peskarenje u Novom Sadu",
+      "image": "https://gumarac021.rs/slike/PGM3.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Novi Sad",
+        "addressRegion": "Vojvodina",
+        "addressCountry": "RS"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 45.267136,
+        "longitude": 19.833549
+      },
+      "telephone": ["+381631049441", "+381616807892"],
+      "email": "gumaracns@gmail.com",
+      "url": "https://gumarac021.rs",
+      "priceRange": "$$",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "08:00",
+        "closes": "16:00"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Srbija"
+      },
+      "serviceType": [
+        "Gumiranje metala",
+        "Industrijska vulkanizacija",
+        "Peskarenje metalnih površina",
+        "Proizvodnja gumenih spojki",
+        "Zaštita od korozije",
+        "Topla vulkanizacija"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "15"
+      }
+    }
+    </script>
+
+    <script>
+        // Language translations
+        const translations = {
+            sr: {
+                nav_home: "Početna",
+                nav_about: "O Nama",
+                nav_services: "Usluge",
+                nav_tech: "Tehnologija",
+                nav_contact: "Kontakt",
+                hero_subtitle: "Vrhunska rešenja zaštite metala i industrijske vulkanizacije",
+                hero_slide2_title: "Profesionalno Gumiranje Metala",
+                hero_slide2_subtitle: "Zaštita od habanja, korozije i hemijskih uticaja",
+                hero_slide3_title: "Najsavremenija Tehnologija",
+                hero_slide3_subtitle: "Autoklav sa preciznošću i kapacitetom",
+                about_title: "Profil Kompanije",
+                about_p1: '<span class="font-bold text-primary">Gumarac NS 021</span> je firma sa sedištem u Novom Sadu, specijalizovana za inženjerska rešenja u domenu zaštite metalnih površina i komponenti od habanja, korozije, abrazije i hemijskih uticaja.',
+                about_p2: "Naša ekspertiza leži u primeni naprednih tehnologija gumiranja i tople vulkanizacije, sa ciljem optimizacije performansi i produženja radnog veka industrijske opreme naših klijenata.",
+                services_title: "Integrisane Usluge i Proizvodnja",
+                services_subtitle: "Nudimo zaokružen portfolio usluga, obuhvatajući ceo proces — od pripreme površine do finalnog proizvoda",
+                service1_title: "Profesionalno Gumiranje Metala",
+                service1_desc: "Oblaganje svih vrsta i oblika metalnih elemenata visokokvalitetnom industrijskom gumom, precizno odabranom prema specifičnim zahtevima eksploatacije (otpornost na abraziju, kiseline, visoke temperature, UV zračenje).",
+                service2_title: "Priprema i Sanacija Metalne Površine",
+                service2_desc: "Obezbeđujemo maksimalnu adheziju kroz rigorozan proces. Ovo uključuje profesionalno peskarenje metalnih delova radi uklanjanja nečistoća i stvaranja idealne mikrostrukture površine, kao i sanaciju prethodno oštećenih metalnih komponenti.",
+                service3_title: "Proizvodnja Spojki po Meri",
+                service3_desc: "Razvijamo i proizvodimo elastične gumene spojke svih vrsta i dimenzija, projektovane da zadovolje zahteve specifičnih prenosnih sistema i industrijskih aplikacija.",
+                service4_title: "Rešenja po Zahtevu Klijenta",
+                service4_desc: "Naš tim je posvećen isporuci personalizovanih rešenja, u potpunosti prateći tehničke specifikacije i potrebe naručioca.",
+                tech_title: "Tehnološka Prednost",
+                tech_subtitle: "Autoklav za Preciznu Vulkanizaciju",
+                tech_feature1_title: "Visokokapacitetni Autoklav",
+                tech_feature1_desc: 'Posedujemo autoklav impresivnih dimenzija (<strong>prečnika 2 metra i dužine 6 metara</strong>), koji omogućava tretman krupnih i gabaritnih delova.',
+                tech_feature2_title: "Kontrolisan Proces",
+                tech_feature2_desc: 'Naš sistem koristi <strong>električni pogon za grejanje</strong>, što obezbeđuje neuporedivo precizniju kontrolu temperature i pritiska u odnosu na parne sisteme. Ovaj metod eliminiše rizik od kondenzacije i čuva osetljive komponente od oštećenja izazvanih vlagom i vodenom parom.',
+                tech_feature3_title: "Uslužna Vulkanizacija",
+                tech_feature3_desc: 'Kao dodatnu uslugu, nudimo korišćenje kapaciteta našeg autoklava (<strong>uslužna topla vulkanizacija</strong>) za potrebe drugih preduzeća.',
+                industries_title: "Reference po Industrijama",
+                industry1_title: "Hemijska Industrija",
+                industry1_desc: "Zaštita rezervoara, cevovoda i pumpi",
+                industry2_title: "Rudarstvo i Prerada",
+                industry2_desc: "Bunkeri, silosi, transportni sistemi",
+                industry3_title: "Mašinogradnja",
+                industry3_desc: "Gumiranje valjaka i točkova",
+                industry4_title: "Energetika",
+                industry4_desc: "Kritični rotirajući delovi",
+                contact_title: "Kontaktirajte Nas",
+                contact_subtitle: "Pozovite nas da pronađemo optimalno rešenje za Vaše industrijske izazove",
+                contact_address_title: "Adresa",
+                contact_phone_title: "Telefon",
+                footer_copyright: "&copy; 2024 Gumarac NS 021. Sva prava zadržana."
+            },
+            en: {
+                nav_home: "Home",
+                nav_about: "About Us",
+                nav_services: "Services",
+                nav_tech: "Technology",
+                nav_contact: "Contact",
+                hero_subtitle: "Premium Metal Protection Solutions and Industrial Vulcanization",
+                hero_slide2_title: "Professional Metal Rubber Lining",
+                hero_slide2_subtitle: "Protection against wear, corrosion and chemical effects",
+                hero_slide3_title: "State-of-the-Art Technology",
+                hero_slide3_subtitle: "Autoclave with precision and capacity",
+                about_title: "Company Profile",
+                about_p1: '<span class="font-bold text-primary">Gumarac NS 021</span> is a company based in Novi Sad, specialized in engineering solutions for protecting metal surfaces and components from wear, corrosion, abrasion and chemical effects.',
+                about_p2: "Our expertise lies in the application of advanced rubber lining and hot vulcanization technologies, with the goal of optimizing performance and extending the service life of our clients' industrial equipment.",
+                services_title: "Integrated Services and Production",
+                services_subtitle: "We offer a comprehensive portfolio of services, covering the entire process — from surface preparation to the final product",
+                service1_title: "Professional Metal Rubber Lining",
+                service1_desc: "Lining of all types and shapes of metal elements with high-quality industrial rubber, precisely selected according to specific operational requirements (resistance to abrasion, acids, high temperatures, UV radiation).",
+                service2_title: "Surface Preparation and Restoration",
+                service2_desc: "We ensure maximum adhesion through a rigorous process. This includes professional sandblasting of metal parts to remove impurities and create an ideal surface microstructure, as well as restoration of previously damaged metal components.",
+                service3_title: "Custom Coupling Production",
+                service3_desc: "We develop and manufacture elastic rubber couplings of all types and dimensions, designed to meet the requirements of specific transmission systems and industrial applications.",
+                service4_title: "Custom Client Solutions",
+                service4_desc: "Our team is dedicated to delivering personalized solutions, fully following the technical specifications and requirements of the customer.",
+                tech_title: "Technological Advantage",
+                tech_subtitle: "Autoclave for Precision Vulcanization",
+                tech_feature1_title: "High-Capacity Autoclave",
+                tech_feature1_desc: 'We possess an autoclave of impressive dimensions (<strong>2 meters in diameter and 6 meters in length</strong>), which enables the treatment of large and oversized parts.',
+                tech_feature2_title: "Controlled Process",
+                tech_feature2_desc: 'Our system uses <strong>electric heating</strong>, which provides incomparably more precise control of temperature and pressure compared to steam systems. This method eliminates the risk of condensation and protects sensitive components from damage caused by moisture.',
+                tech_feature3_title: "Contract Vulcanization Services",
+                tech_feature3_desc: 'As an additional service, we offer the use of our autoclave capacity (<strong>contract hot vulcanization</strong>) for the needs of other companies.',
+                industries_title: "References by Industry",
+                industry1_title: "Chemical Industry",
+                industry1_desc: "Protection of tanks, pipelines and pumps",
+                industry2_title: "Mining and Processing",
+                industry2_desc: "Bunkers, silos, transport systems",
+                industry3_title: "Mechanical Engineering",
+                industry3_desc: "Rubber lining of rollers and wheels",
+                industry4_title: "Energy Sector",
+                industry4_desc: "Critical rotating parts",
+                contact_title: "Contact Us",
+                contact_subtitle: "Call us to find the optimal solution for your industrial challenges",
+                contact_address_title: "Address",
+                contact_phone_title: "Phone",
+                footer_copyright: "&copy; 2024 Gumarac NS 021. All rights reserved."
+            }
+        };
+
+        // Get current language from localStorage or default to Serbian
+        let currentLang = localStorage.getItem('preferredLanguage') || 'sr';
+
+        // Function to switch language
+        function switchLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('preferredLanguage', lang);
+            
+            // Update all elements with data-lang-key
+            document.querySelectorAll('[data-lang-key]').forEach(element => {
+                const key = element.getAttribute('data-lang-key');
+                if (translations[lang][key]) {
+                    element.innerHTML = translations[lang][key];
+                }
+            });
+
+            // Update language button states
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active', 'inactive');
+                if (btn.id.includes(lang)) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.add('inactive');
+                }
+            });
+
+            // Update HTML lang attribute
+            document.documentElement.lang = lang;
+        }
+
+        // Hero Slider Object
+        const heroSlider = {
+            currentSlide: 0,
+            slides: null,
+            
+            init: function() {
+                this.slides = document.querySelectorAll('#pocetna .slide');
+                this.autoPlay();
+            },
+            
+            show: function(n) {
+                this.slides[this.currentSlide].classList.remove('active');
+                this.currentSlide = (n + this.slides.length) % this.slides.length;
+                this.slides[this.currentSlide].classList.add('active');
+            },
+            
+            next: function() {
+                this.show(this.currentSlide + 1);
+            },
+            
+            prev: function() {
+                this.show(this.currentSlide - 1);
+            },
+            
+            autoPlay: function() {
+                setInterval(() => {
+                    this.next();
+                }, 5000);
+            }
+        };
+
+        // Service Sliders
+        function initServiceSliders() {
+            const sliders = document.querySelectorAll('.service-slider');
+            
+            sliders.forEach(slider => {
+                let currentIndex = 0;
+                const slides = slider.querySelectorAll('.service-slide');
+                
+                function showNextSlide() {
+                    slides[currentIndex].classList.remove('active');
+                    currentIndex = (currentIndex + 1) % slides.length;
+                    slides[currentIndex].classList.add('active');
+                }
+                
+                // Auto-advance every 5 seconds
+                setInterval(showNextSlide, 5000);
+            });
+        }
+
+        // Initialize everything when DOM is ready
+        document.addEventListener('DOMContentLoaded', function() {
+            switchLanguage(currentLang);
+            heroSlider.init();
+            initServiceSliders();
+        });
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when link is clicked
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
